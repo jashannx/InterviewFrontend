@@ -45,7 +45,7 @@ export const useInterview = () => {
         setLoading(true);
         try {
             response = await getAllInterviews();
-            console.log("Fetched Reports:", response.reports);
+            // console.log("Fetched Reports:", response.reports);
             setReports(response.reports);
         } catch (error) {
             console.error("Error fetching all interview reports:", error);
